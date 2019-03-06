@@ -41,6 +41,7 @@ cpan install IO::File;
 
 
 
+
 How to run ECuADOR
 
 perl ECuADOR.pl -i cp_container_folder -w 2000 bp -f fasta -out test
