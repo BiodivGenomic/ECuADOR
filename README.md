@@ -33,14 +33,12 @@ brew install perl
 linux - mac
 
 cpan install Bio::SeqIO;
+
 cpan install IO::String;
-cpan install Set::IntSpan
+
+cpan install Set::IntSpan;
+
 cpan install IO::File;
-
-
-
-
-
 
 
 
@@ -48,7 +46,12 @@ How to run ECuADOR
 
 perl ECuADOR.pl -i cp_container_folder -w 2000 bp -f fasta -out test
 
+
+If you want to specify output format
+
 perl ECuADOR.pl -i cp_container_folder -w 2000 bp -f fasta -out test --ext gff3
+
+or
 
 perl ECuADOR.pl -i cp_container_folder -w 2000 bp -f fasta -out test --ext gff3 --save_regions all
 
@@ -70,11 +73,3 @@ Additionally for output files
 (--ext) gff3/fasta.
 
 (--save_regions) save regions separately LSC, SSC, IRA, IRB or all.
-
-
-
-
-
-
-
-
