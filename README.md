@@ -44,14 +44,10 @@ cpan install IO::File;
 
 How to run ECuADOR
 
-perl ECuADOR.pl -i cp_container_folder -w 2000 bp -f fasta -out test
-
-
-If you want to specify output format
 
 perl ECuADOR.pl -i cp_container_folder -w 2000 bp -f fasta -out test --ext gff3
 
-or
+or if you want to save the regions separately
 
 perl ECuADOR.pl -i cp_container_folder -w 2000 bp -f fasta -out test --ext gff3 --save_regions all
 
@@ -65,7 +61,6 @@ Where
 (-f) Chloroplasts format either fasta or genbank.
 
 (-out) Output file name.
-
 
 
 Additionally for output files
