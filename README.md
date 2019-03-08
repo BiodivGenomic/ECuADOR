@@ -62,9 +62,6 @@ Where
 
 (-out) Output file name.
 
-
-Additionally for output files
-
 (--ext) gff3/fasta.
 
 (--save_regions) save regions separately LSC, SSC, IRA, IRB or all.
