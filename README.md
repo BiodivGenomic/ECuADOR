@@ -23,9 +23,13 @@ sudo apt-get install perl build-essential curl
 mac
 
 xcode-select --install
+
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew doctor
+
 brew install perl
+
 
 
 2) Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
