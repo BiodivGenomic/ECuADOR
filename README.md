@@ -83,13 +83,20 @@ How to run the example file
 File preparation
 
 unzip ECuADOR-master.zip
+
 cd ECuADOR-master/ecTEST/
+
 unzip cpDNAtest.gb.zip
+
 sudo rm -R __MACOSX/
+
 sudo rm -R cpDNAtest.gb.zip
+
 cd ..
 
+
 File execution
+
 
 perl ECuADOR.pl -i ecTEST -w 800 bp -f genbank -out test --ext gff3
 
