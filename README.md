@@ -11,30 +11,42 @@ A quick installation guide follows below.
 
 EcUADOR requires:
 
+
+
+
 1) Perl is usually installed on Unix-like systems by default. If not, it can be retrieved from http://www.perl.org/ or
 
-linux
 
-sudo apt-get update 
-sudo apt-get upgrade
-sudo apt-get install perl build-essential curl
+Manual instalation
+
+Mac-Linux
+
+wget https://www.cpan.org/src/5.0/perl-5.30.0.tar.gz
+
+tar -xzf perl-5.30.0.tar.gz
+
+cd perl-5.30.0
+    
+./Configure -des -Dprefix=$HOME/localperl
+     
+make
+     
+make test
+     
+make install
 
 
-mac
+Windows
 
-xcode-select --install
+Download Perl from
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-brew doctor
-
-brew install perl
+https://www.activestate.com/products/activeperl/downloads/
 
 
 
 2) Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
 
-linux - mac
+Mac-Linux-Windows
 
 cpan install Bio::SeqIO;
 
@@ -71,9 +83,12 @@ Where
 (--save_regions) save regions separately LSC, SSC, IRA, IRB or all.
 
 
-Installation file
+Easy installation file
 
-sudo sh EC_Linux_installer
+sudo sh EC_Linux_installer.sh
+
+sudo sh EC_Mac_installer.sh
+
 
 
 TUTORIAL
