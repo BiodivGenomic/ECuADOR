@@ -76,7 +76,7 @@ Installation file
 sudo sh EC_Linux_installer
 
 
-
+TUTORIAL
 
 How to run the example file
 
@@ -95,8 +95,7 @@ sudo rm -R cpDNAtest.gb.zip
 cd ..
 
 
-File execution
-
+Execution
 
 perl ECuADOR.pl -i ecTEST -w 800 bp -f genbank -out test --ext gff3
 
