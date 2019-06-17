@@ -72,7 +72,7 @@ Where
 
 (-i) Chlorplasts cointainer folder in one single format either fasta or genbank.
 
-(-w) Sliding window size >= 100.
+(-w) Length of the sliding window to initialize the cpDNA regions search (default value 800 bp).
 
 (-f) Chloroplasts format either fasta or genbank.
 
