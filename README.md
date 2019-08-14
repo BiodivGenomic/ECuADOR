@@ -120,7 +120,7 @@ Ready to align option
 
       * cd ..
 
-# Execution
+* Execution
 
 * perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
