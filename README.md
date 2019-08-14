@@ -56,19 +56,29 @@ cpan install Set::IntSpan;
 
 cpan install IO::File;
 
+cpan install Bio::AlignIO;
+
+cpan install Bio::Factory::EMBOSS;
+
+cpan install File::Temp qw/ tmpnam /;
+
+cpan install Cwd;
 
 
-How to run ECuADOR
+#How to run ECuADOR
+
+perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
+
+perl ECuADOR.pl -i cp_container_folder -w 1000 -f fasta -out test --ext fasta
+
+Ready to align option
+
+perl ECuADOR_v.1.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
 
 
-perl ECuADOR.pl -i cp_container_folder -w 800 bp -f fasta -out test --ext gff3
-
-or if you want to save the regions separately
-
-perl ECuADOR.pl -i cp_container_folder -w 800 bp -f fasta -out test --ext gff3 --save_regions all
 
 
-Where
+#Where
 
 (-i) Chlorplasts cointainer folder in one single format either fasta or genbank.
 
@@ -82,8 +92,10 @@ Where
 
 (--save_regions) save regions separately LSC, SSC, IRA, IRB or all.
 
+(--orient) TRUE, ready to align option, only for fasta input format + save_regions on.
 
-Easy installation file
+
+#Easy installation file
 
 sudo sh EC_Linux_installer.sh
 
@@ -91,7 +103,7 @@ sudo sh EC_Mac_installer.sh
 
 
 
-TUTORIAL
+#TUTORIAL
 
 How to run the example file
 
@@ -112,5 +124,5 @@ cd ..
 
 Execution
 
-perl ECuADOR.pl -i ecTEST -w 800 bp -f genbank -out test --ext gff3
+perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
