@@ -108,13 +108,19 @@ Ready to align option
 
       * unzip ECuADOR-master.zip
 
-      * cd ECuADOR-master/ecTEST/
+      * cd '/preference_file/ECuADOR-master/Examples'
 
-      * unzip cpDNAtest.gb.zip
-
-      * sudo rm -R __MACOSX/
-
-      * sudo rm -R cpDNAtest.gb.zip
+      * tar -xvf 161cpDNAtest.tar.xz 
+      
+      * tar -xvf 5cpDNAtest.tar.xz
+      
+      * sudo rm -R 5cpDNAtest.tar.xz
+      
+      * sudo rm -R 161cpDNAtest.tar.xz
+      
+      * mv -v '/preference_file/ECuADOR-master/Examples/161cpDNAtest' '/preference_file/ECuADOR-master/'
+      
+      * mv -v '/preference_file/ECuADOR-master/Examples/5cpDNAtest' '/preference_file/ECuADOR-master/'
 
       * cd ..
 
