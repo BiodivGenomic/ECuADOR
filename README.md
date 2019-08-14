@@ -122,5 +122,5 @@ Ready to align option
 
 * Execution
 
-* perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
+     * perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
