@@ -18,85 +18,87 @@ Source code available at:
 
         * Mac-Linux
 
-wget https://www.cpan.org/src/5.0/perl-5.30.0.tar.gz
+         wget https://www.cpan.org/src/5.0/perl-5.30.0.tar.gz
 
-tar -xzf perl-5.30.0.tar.gz
+         tar -xzf perl-5.30.0.tar.gz
 
-cd perl-5.30.0
+         cd perl-5.30.0
     
-./Configure -des -Dprefix=$HOME/localperl
+         ./Configure -des -Dprefix=$HOME/localperl
      
-make
+         make
      
-make test
+         make test
      
-make install
+         make install
 
 
         * Windows
 
-Download Perl from
+         Download Perl from
 
-https://www.activestate.com/products/activeperl/downloads/
+         https://www.activestate.com/products/activeperl/downloads/
 
 
 
 2. Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
 
-Mac-Linux-Windows
+   * Manual instalation
+   
+      * Mac-Linux-Windows
 
-cpan install Bio::SeqIO;
+       cpan install Bio::SeqIO;
 
-cpan install IO::String;
+       cpan install IO::String;
 
-cpan install Set::IntSpan;
+       cpan install Set::IntSpan;
 
-cpan install IO::File;
+       cpan install IO::File;
 
-cpan install Bio::AlignIO;
+       cpan install Bio::AlignIO;
 
-cpan install Bio::Factory::EMBOSS;
+       cpan install Bio::Factory::EMBOSS;
 
-cpan install File::Temp qw/ tmpnam /;
+       cpan install File::Temp qw/ tmpnam /;
 
-cpan install Cwd;
+       cpan install Cwd;
+       
+
+# Easy installation file for Linux and Mac
+
+* sudo sh EC_Linux_installer.sh
+
+* sudo sh EC_Mac_installer.sh
 
 
 # How to run ECuADOR
 
-perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
+* perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
-perl ECuADOR.pl -i cp_container_folder -w 1000 -f fasta -out test --ext fasta
+* perl ECuADOR.pl -i cp_container_folder -w 1000 -f fasta -out test --ext fasta
 
 Ready to align option
 
-perl ECuADOR_v.1.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
+* perl ECuADOR_v.1.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
 
 
 
 
 # Where
 
-(-i) Chlorplasts cointainer folder in one single format either fasta or genbank.
+* (-i) Chlorplasts cointainer folder in one single format either fasta or genbank.
 
-(-w) Length of the sliding window to initialize the cpDNA regions search (default value 800 bp).
+* (-w) Length of the sliding window to initialize the cpDNA regions search (default value 800 bp).
 
-(-f) Chloroplasts format either fasta or genbank.
+* (-f) Chloroplasts format either fasta or genbank.
 
-(-out) Output file name.
+* (-out) Output file name.
 
-(--ext) gff3/fasta.
+* (--ext) gff3/fasta.
 
-(--save_regions) save regions separately LSC, SSC, IRA, IRB or all.
+* (--save_regions) save regions separately LSC, SSC, IRA, IRB or all.
 
-(--orient) TRUE, ready to align option, only for fasta input format + save_regions on.
-
-
-#Easy installation file
-
-sudo sh EC_Linux_installer.sh
-
-sudo sh EC_Mac_installer.sh
+* (--orient) TRUE, ready to align option, only for fasta input format + save_regions on.
 
 
 
@@ -118,7 +120,7 @@ sudo rm -R cpDNAtest.gb.zip
 
 cd ..
 
-Execution
+# Execution
 
-perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
+* perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
