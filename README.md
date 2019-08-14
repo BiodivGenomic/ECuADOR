@@ -7,7 +7,7 @@ Programmer:
 
 Source code available at: 
 
-# A quick installation guide follows below.
+# A quick installation guide follows below
 
 * EcUADOR requires:
 
