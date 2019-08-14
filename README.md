@@ -7,12 +7,9 @@ Programmer:
 
 Source code available at: 
 
-A quick installation guide follows below.
+# A quick installation guide follows below.
 
 EcUADOR requires:
-
-
-
 
 1) Perl is usually installed on Unix-like systems by default. If not, it can be retrieved from http://www.perl.org/ or
 
@@ -65,7 +62,7 @@ cpan install File::Temp qw/ tmpnam /;
 cpan install Cwd;
 
 
-#How to run ECuADOR
+# How to run ECuADOR
 
 perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
@@ -78,7 +75,7 @@ perl ECuADOR_v.1.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3
 
 
 
-#Where
+# Where
 
 (-i) Chlorplasts cointainer folder in one single format either fasta or genbank.
 
@@ -103,7 +100,7 @@ sudo sh EC_Mac_installer.sh
 
 
 
-#TUTORIAL
+# TUTORIAL
 
 How to run the example file
 
@@ -120,7 +117,6 @@ sudo rm -R __MACOSX/
 sudo rm -R cpDNAtest.gb.zip
 
 cd ..
-
 
 Execution
 
