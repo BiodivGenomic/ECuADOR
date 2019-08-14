@@ -9,7 +9,7 @@ Source code available at:
 
 # A quick installation guide follows below.
 
-*EcUADOR requires:
+* EcUADOR requires:
 
 1. Perl is usually installed on Unix-like systems by default. If not, it can be retrieved from http://www.perl.org/ or
 
