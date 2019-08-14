@@ -100,7 +100,7 @@ Ready to align option
 
 
 
-# TUTORIAL
+# Tutorial
 
 * How to run the example file
 
