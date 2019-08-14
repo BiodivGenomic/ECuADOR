@@ -75,8 +75,6 @@ Source code available at:
 
 * perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
-* perl ECuADOR.pl -i cp_container_folder -w 1000 -f fasta -out test --ext fasta
-
 Ready to align option
 
 * perl ECuADOR_v.1.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
