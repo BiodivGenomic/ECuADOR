@@ -9,14 +9,14 @@ Source code available at:
 
 # A quick installation guide follows below.
 
-EcUADOR requires:
+*EcUADOR requires:
 
-1) Perl is usually installed on Unix-like systems by default. If not, it can be retrieved from http://www.perl.org/ or
+1. Perl is usually installed on Unix-like systems by default. If not, it can be retrieved from http://www.perl.org/ or
 
 
-Manual instalation
+    * Manual instalation
 
-Mac-Linux
+        * Mac-Linux
 
 wget https://www.cpan.org/src/5.0/perl-5.30.0.tar.gz
 
@@ -33,7 +33,7 @@ make test
 make install
 
 
-Windows
+        * Windows
 
 Download Perl from
 
@@ -41,7 +41,7 @@ https://www.activestate.com/products/activeperl/downloads/
 
 
 
-2) Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
+2. Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
 
 Mac-Linux-Windows
 
