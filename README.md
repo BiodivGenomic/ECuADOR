@@ -104,21 +104,21 @@ Ready to align option
 
 # TUTORIAL
 
-How to run the example file
+* How to run the example file
 
-File preparation
+   * File preparation
 
-unzip ECuADOR-master.zip
+      * unzip ECuADOR-master.zip
 
-cd ECuADOR-master/ecTEST/
+      * cd ECuADOR-master/ecTEST/
 
-unzip cpDNAtest.gb.zip
+      * unzip cpDNAtest.gb.zip
 
-sudo rm -R __MACOSX/
+      * sudo rm -R __MACOSX/
 
-sudo rm -R cpDNAtest.gb.zip
+      * sudo rm -R cpDNAtest.gb.zip
 
-cd ..
+      * cd ..
 
 # Execution
 
