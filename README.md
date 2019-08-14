@@ -122,8 +122,8 @@ Ready to align option
 
    * Execution for gff3 format
 
-     * perl ECuADOR_v.1.pl -i 161cpDNAtest -w 1000 -f genbank -out test --ext gff3
+     * perl ECuADOR.pl -i 161cpDNAtest -w 1000 -f genbank -out test --ext gff3
 
    * Execution for fasta format (ready to align, this option may take time)
 
-     * perl ECuADOR_v.1.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
+     * perl ECuADOR.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
