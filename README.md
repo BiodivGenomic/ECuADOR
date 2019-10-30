@@ -39,7 +39,7 @@ Source code available at:
          https://www.activestate.com/products/activeperl/downloads/
          
      
-     * Bioperl instalation
+ 2. Bioperl instalation
          
          * Linux
      
@@ -65,7 +65,7 @@ Source code available at:
          
          sudo ./Build install
 
-2. Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
+3. Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
 
    * Manual instalation
    
@@ -168,7 +168,7 @@ Ready to align option
    This second parameter category may take time according to the number of evaluated chloroplasts.
    
    
- #IMPORTANT
+ # IMPORTANT
    
 All used input chloroplast files either in genbank or fasta format must be in separate files within one container folder which in turn have to be in a single format only fasta or genbank (see the examples format file). The script won't read mixed formats or multi chloroplast sequences in one single container file.   
    
