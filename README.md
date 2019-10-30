@@ -18,28 +18,52 @@ Source code available at:
 
         * Mac-Linux
 
-         wget https://www.cpan.org/src/5.0/perl-5.30.0.tar.gz
-
-         tar -xzf perl-5.30.0.tar.gz
-
-         cd perl-5.30.0
-    
-         ./Configure -des -Dprefix=$HOME/localperl
-     
-         make
-     
-         make test
-     
-         make install
-
+        wget https://www.cpan.org/src/5.0/perl-5.28.1.tar.gz
+        
+        tar -xzf perl-5.28.1.tar.gz
+        
+        cd perl-5.28.1
+        
+        ./Configure -de
+        
+        make
+        
+        make test
+        
+        make install
 
         * Windows
 
          Download Perl from
 
          https://www.activestate.com/products/activeperl/downloads/
+         
+     
+     * Bioperl instalation
+         
+         * Linux
+     
+         sudo apt-get update
+         
+         sudo apt-get install bioperl
+         
+         * Mac
+         
+         cpan install bioperl
 
-
+         Download, then unpack the tar file from 
+         
+         https://metacpan.org/release/CJFIELDS/BioPerl-1.6.1
+         
+         tar xvfz BioPerl-1.6.1.tar.gz
+         
+         cd BioPerl-1.6.1
+         
+         sudo perl Build.PL
+         
+         ./Build test
+         
+         sudo ./Build install
 
 2. Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
 
@@ -96,32 +120,56 @@ Ready to align option
 
 # Tutorial
 
-* How to run the example file
+* How to run the example files
 
    * File preparation
-
+   
+       Unzip ECuADOR-master zip file and you will find all the needed files you can run to test your ECuADOR installation.
+        
       * unzip ECuADOR-master.zip
+      
+       Move into the folder called Examples, where you will find 2 kinds of examples ready to be tested.
 
       * cd '/preference_file/ECuADOR-master/Examples'
 
+      Unzip the 161cpDNAtest.tar.xz file which one contains 161 chloroplast sequences that we will curate using a first parameter category fixed in our script.
+      
       * tar -xvf 161cpDNAtest.tar.xz 
       
+      Unzip the 15cpDNAtest.tar.xz file file which one contains a small set of 5 chloroplast sequences that we will curate using a second parameter category fixed in our script.
+      
       * tar -xvf 5cpDNAtest.tar.xz
+      
+      Remove remove unnecessary files 5cpDNAtest.tar.xz and 161cpDNAtest.tar.xz respectively.
       
       * sudo rm -R 5cpDNAtest.tar.xz
       
       * sudo rm -R 161cpDNAtest.tar.xz
       
+      Move the unzipped examples 5cpDNAtest and 161cpDNAtest within the main folder called ECuADOR-master to run both examples respectively.
+      
       * mv -v '/preference_file/ECuADOR-master/Examples/161cpDNAtest' '/preference_file/ECuADOR-master/'
       
       * mv -v '/preference_file/ECuADOR-master/Examples/5cpDNAtest' '/preference_file/ECuADOR-master/'
+      
+       Change to the current directory ECuADOR-master
 
       * cd ..
 
-   * Execution for gff3 format
+   * ECuADOR execution using the first parameter category (ideally to work with only genbank files where you want to identify and extract in the widely used LSC, IRA, SSC, IRB chloroplast order) either using as an extension gff3 or fasta as an output file.
 
      * perl ECuADOR.pl -i 161cpDNAtest -w 1000 -f genbank -out test --ext gff3
 
-   * Execution for fasta format (ready to align, this option may take time)
-
+   * ECuADOR execution using the second parameter category (ready to align option). It is ideally designed to work with only fasta chloroplast sequences either from genbank or draft sequences which one will identify, extract and reorient the whole analyzed sequences in the widely used LSC, IRA, SSC, IRB chloroplast order. It will facilitate the rapid post-editing steps such as the creation of genome alignments, detection of variable regions, SNP detection, and phylogenomic analyses. 
+   
      * perl ECuADOR.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
+     
+     
+   This second parameter category may take time according to the number of evaluated chloroplasts.
+   
+   
+ #IMPORTANT
+   
+All used input chloroplast files either in genbank or fasta format must be in separate files within one container folder which in turn have to be in a single format only fasta or genbank (see the examples format file). The script won't read mixed formats or multi chloroplast sequences in one single container file.   
+   
+   
