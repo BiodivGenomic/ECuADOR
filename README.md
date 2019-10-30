@@ -64,12 +64,6 @@ Source code available at:
        cpan install Cwd;
        
 
-# Easy installation file for Linux and Mac
-
-* sudo sh EC_Linux_installer.sh
-
-* sudo sh EC_Mac_installer.sh
-
 
 # How to run ECuADOR
 
