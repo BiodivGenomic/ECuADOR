@@ -65,7 +65,7 @@ Source code available at:
          
          sudo ./Build install
 
-3. Perl requires the following modules Bio::SeqIO, IO::String, Set::IntSpan, IO::File
+3. Perl requires the following modules
 
    * Manual instalation
    
