@@ -132,15 +132,15 @@ Ready to align option
 
       * cd '/preference_file/ECuADOR-master/Examples'
 
-      Unzip the 161cpDNAtest.tar.xz file which one contains 161 chloroplast sequences that we will curate using a first parameter category fixed in our script.
+      Unzip the 161cpDNAtest.tar.xz file which one contains 161 chloroplast sequences that we will curate using a first parameters category fixed in our script.
       
       * tar -xvf 161cpDNAtest.tar.xz 
       
-      Unzip the 15cpDNAtest.tar.xz file file which one contains a small set of 5 chloroplast sequences that we will curate using a second parameter category fixed in our script.
+      Unzip the 15cpDNAtest.tar.xz file file which one contains a small set of 5 chloroplast sequences that we will curate using the second parameters category fixed in our script.
       
       * tar -xvf 5cpDNAtest.tar.xz
       
-      Remove remove unnecessary files 5cpDNAtest.tar.xz and 161cpDNAtest.tar.xz respectively.
+      Remove unnecessary files 5cpDNAtest.tar.xz and 161cpDNAtest.tar.xz respectively.
       
       * sudo rm -R 5cpDNAtest.tar.xz
       
@@ -156,11 +156,11 @@ Ready to align option
 
       * cd ..
 
-   * ECuADOR execution using the first parameter category (ideally to work with only genbank files where you want to identify and extract in the widely used LSC, IRA, SSC, IRB chloroplast order) either using as an extension gff3 or fasta as an output file.
+   * ECuADOR execution using the first parameters category (ideally to work with only genbank files where you want to identify and extract in the widely used LSC, IRA, SSC, IRB chloroplast order) either using as an extension gff3 or fasta as an output file.
 
      * perl ECuADOR.pl -i 161cpDNAtest -w 1000 -f genbank -out test --ext gff3
 
-   * ECuADOR execution using the second parameter category (ready to align option). It is ideally designed to work with only fasta chloroplast sequences either from genbank or draft sequences which one will identify, extract and reorient the whole analyzed sequences in the widely used LSC, IRA, SSC, IRB chloroplast order. It will facilitate the rapid post-editing steps such as the creation of genome alignments, detection of variable regions, SNP detection, and phylogenomic analyses. 
+   * ECuADOR execution using the second parameters category (ready to align option). It is ideally designed to work with only fasta chloroplast sequences either from genbank or draft sequences which one will identify, extract and reorient the whole analyzed sequences in the widely used LSC, IRA, SSC, IRB chloroplast order. It will facilitate the rapid post-editing steps such as the creation of genome alignments, detection of variable regions, SNP detection, and phylogenomic analyses. 
    
      * perl ECuADOR.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
      
@@ -170,6 +170,6 @@ Ready to align option
    
  # IMPORTANT
    
-All used input chloroplast files either in genbank or fasta format must be in separate files within one container folder which in turn have to be in a single format only fasta or genbank (see the examples format file). The script won't read mixed formats or multi chloroplast sequences in one single container file.   
+All used input chloroplast files either in genbank or fasta format must be in separate files within one container folder which in turn have to be in a single format only fasta or genbank (see the examples format file above). The script won't read mixed formats or multi chloroplast sequences in one single container file.   
    
    
