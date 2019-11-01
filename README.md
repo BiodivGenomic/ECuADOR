@@ -170,6 +170,6 @@ Ready to align option
    
  # IMPORTANT
    
-All used input chloroplast files either in genbank or fasta format must be in separate files within one container folder which in turn have to be in a single format only fasta or genbank (see the examples format file above). The script won't read mixed formats or multi chloroplast sequences in one single container file.   
+All used input chloroplast files either in genbank or fasta format must be in separate files within one container folder which in turn have to be in a single format only fasta or genbank (see the examples format files above). The script won't read mixed formats or multi chloroplast sequences in one single container file.   
    
    
