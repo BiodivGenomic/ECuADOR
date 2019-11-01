@@ -130,7 +130,7 @@ Ready to align option
       
        Move into the folder called Examples, where you will find 2 kinds of examples ready to be tested.
 
-      * cd '/preference_file/ECuADOR-master/Examples'
+      * cd '/preference_directory/ECuADOR-master/Examples'
 
       Unzip the 161cpDNAtest.tar.xz file which one contains 161 chloroplast sequences that we will curate using a first parameters category fixed in our script.
       
@@ -148,9 +148,9 @@ Ready to align option
       
       Move the unzipped examples 5cpDNAtest and 161cpDNAtest within the main folder called ECuADOR-master to run both examples respectively.
       
-      * mv -v '/preference_file/ECuADOR-master/Examples/161cpDNAtest' '/preference_file/ECuADOR-master/'
+      * mv -v '/preference_directory/ECuADOR-master/Examples/161cpDNAtest' '/preference_file/ECuADOR-master/'
       
-      * mv -v '/preference_file/ECuADOR-master/Examples/5cpDNAtest' '/preference_file/ECuADOR-master/'
+      * mv -v '/preference_directory/ECuADOR-master/Examples/5cpDNAtest' '/preference_file/ECuADOR-master/'
       
        Change to the current directory ECuADOR-master
 
