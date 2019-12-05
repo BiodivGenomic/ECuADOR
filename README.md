@@ -1,6 +1,6 @@
 # ECuADOR
 Easy Curation of Angiosperm Duplicated Organellar Regions -- Identifies, extract, and rearranges the main Chloroplast regions (LSC, IRa, SSC, IRb) in plasmid DNA.
-Version: 1.1
+Version: 2.0
 Copyright (C) 2018-2019 (paper)
 Contact: 
 Programmer: 
@@ -9,7 +9,7 @@ Source code available at:
 
 # A quick installation guide follows below
 
-* EcUADOR requires:
+* ECuADOR requires:
 
 1. Perl is usually installed on Unix-like systems by default. If not, it can be retrieved from http://www.perl.org/ or
 
@@ -24,13 +24,15 @@ Source code available at:
         
         cd perl-5.28.1
         
-        ./Configure -de
+        ./configure -de
         
         make
         
         make test
         
         make install
+        
+        If needed, add the path the perl 5.28.1 to your PATH 
 
         * Windows
 
@@ -48,8 +50,6 @@ Source code available at:
          sudo apt-get install bioperl
          
          * Mac
-         
-         cpan install bioperl
 
          Download, then unpack the tar file from 
          
@@ -59,9 +59,13 @@ Source code available at:
          
          cd BioPerl-1.6.1
          
+         sudo cpan install Module::Build (if not previously installed)
+         
          sudo perl Build.PL
          
-         ./Build test
+         (you will be asked to install several perl modules, you can choose to install the required modules for ECuADOR at this step, or in step 3)
+         
+         sudo ./Build test
          
          sudo ./Build install
 
@@ -71,31 +75,35 @@ Source code available at:
    
       * Mac-Linux-Windows
 
-       cpan install Bio::SeqIO;
+       sudo cpan install Bio::SeqIO;
 
-       cpan install IO::String;
+       sudo cpan install IO::String;
 
-       cpan install Set::IntSpan;
+       sudo cpan install Set::IntSpan;
 
-       cpan install IO::File;
+       sudo cpan install IO::File;
 
-       cpan install Bio::AlignIO;
+       sudo cpan install Bio::AlignIO;
 
-       cpan install Bio::Factory::EMBOSS;
+       sudo cpan install Bio::Factory::EMBOSS;
 
-       cpan install File::Temp qw/ tmpnam /;
+       sudo cpan install File::Temp qw/ tmpnam /;
 
-       cpan install Cwd;
+       sudo cpan install Cwd;
        
 
 
 # How to run ECuADOR
 
+ # IMPORTANT   
+All used input chloroplast files either in genbank or fasta format must be in separate files within a unique folder without format mixing (see the examples format files above). The script won't read mixed formats or multi chloroplast sequences in one single container file.
+
+
 * perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
 
 Ready to align option
 
-* perl ECuADOR_v.1.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
+* perl ECuADOR.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
 
 
 
@@ -166,10 +174,5 @@ Ready to align option
      
      
    This second parameter category may take time according to the number of evaluated chloroplasts.
-   
-   
- # IMPORTANT
-   
-All used input chloroplast files either in genbank or fasta format must be in separate files within one container folder which in turn have to be in a single format only fasta or genbank (see the examples format files above). The script won't read mixed formats or multi chloroplast sequences in one single container file.   
-   
+    
    
