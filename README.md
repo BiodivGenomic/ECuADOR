@@ -188,7 +188,7 @@ Ready to align option
       
    * TcpDNA_oriented - fasta sequence(s) 
    
-      Individual reorganized regions with orientation (each region in different files - Ready to align option)
+      Individual reorganized regions with orientation (each region in different files - Ready to align option).
       
    * TcpDNA_oriented_all
    
