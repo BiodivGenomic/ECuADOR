@@ -174,5 +174,27 @@ Ready to align option
      
      
    This second parameter category may take time according to the number of evaluated chloroplasts.
-    
+
+# OUTPUT FILES
+
+   * cpDNA_fasta_ext - fasta sequence(s)
+   
+      Complete reorganized sequence(s) without orientation (Entire sequence(s) in different files).
+   
+   * cpDNA_regions - fasta sequence(s) 
+   
+      Individual reorganized regions without orientation (each region in different files).
+      
+      
+   * TcpDNA_oriented - fasta sequence(s) 
+   
+      Individual reorganized regions with orientation (each region in different files - Ready to align option)
+      
+   * TcpDNA_oriented_all
+   
+      Complete reorganized sequence(s) with orientation (Entire sequence(s) in the same file - Ready to align option by either 
+      the entire cpDNA LSC-IRb-SSC-IRa or LSC-IRb-SSC).
+      
+      
+     
    
