@@ -193,7 +193,7 @@ Ready to align option
    * TcpDNA_oriented_all
    
       Complete reorganized sequence(s) with orientation (Entire sequence(s) in the same file - Ready to align option by either 
-      the entire cpDNA LSC-IRb-SSC-IRa or LSC-IRb-SSC).
+      the entire cpDNA (LSC-IRb-SSC-IRa) or (LSC-IRb-SSC).
       
       
      
