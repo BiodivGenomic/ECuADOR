@@ -188,13 +188,13 @@ Ready to align option
       Individual reorganized regions without orientation (each region in different files).
       
       
-   * TcpDNA_oriented - fasta sequence(s) 
+   * TcpDNA_oriented - fasta sequences 
    
       Individual reorganized regions with orientation (each region in different files - Ready to align option).
       
    * TcpDNA_oriented_all
    
-      Complete reorganized sequence(s) with orientation (Entire sequence(s) in the same file - Ready to align option by either 
+      Complete reorganized sequences with orientation (Entire sequence(s) in the same file - Ready to align option by either 
       the entire cpDNA (LSC-IRb-SSC-IRa) or (LSC-IRb-SSC).
       
       
