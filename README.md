@@ -172,7 +172,7 @@ Ready to align option
 
    * ECuADOR execution using the second parameters category (ready to align option). It is ideally designed to work with only fasta chloroplast sequences either from genbank or draft sequences which one will identify, extract and reorient the whole analyzed sequences in the widely used LSC, IRA, SSC, IRB chloroplast order. It will facilitate the rapid post-editing steps such as the creation of genome alignments, detection of variable regions, SNP detection, and phylogenomic analyses. 
    
-     * perl ECuADOR.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE --noIRs 2
+     * perl ECuADOR.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext fasta --save_regions ALL --orient TRUE --noIRs 2
      
      
    This second parameter category may take time according to the number of evaluated chloroplasts.
