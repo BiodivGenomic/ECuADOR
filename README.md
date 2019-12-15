@@ -103,7 +103,7 @@ All used input chloroplast files either in genbank or fasta format must be in se
 
 Ready to align option
 
-* perl ECuADOR.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
+* perl ECuADOR.pl -i cp_container_folder -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE --noIRs 2
 
 
 
@@ -112,7 +112,7 @@ Ready to align option
 
 * (-i) Chlorplasts cointainer folder in one single format either fasta or genbank.
 
-* (-w) Length of the sliding window to initialize the cpDNA regions search (default value 800 bp).
+* (-w) Length of the sliding window to initialize the cpDNA regions search (default value 1000 bp).
 
 * (-f) Chloroplasts format either fasta or genbank.
 
@@ -120,9 +120,11 @@ Ready to align option
 
 * (--ext) gff3/fasta.
 
-* (--save_regions) save regions separately LSC, SSC, IRA, IRB or all.
+* (--save_regions) save regions separately LSC, SSC, IRB, IRA or all.
 
-* (--orient) TRUE, ready to align option, only for fasta input format + save_regions on.
+* (--orient) TRUE, ready to align option, only for fasta input format (only with the option save_regions ALL active).
+
+* (--noIRs) 1/2, control the if the final resulting file will contain the entire regions (LSC, IRB, SSC, IRA) or without one inverted repeat (LSC, IRB, SSC) (only with the option (--orient TRUE) active), (--noIRs 1) = (LSC, IRB, SSC) or (--noIRs 2) = (LSC, IRB, SSC, IRA).
 
 
 
@@ -170,7 +172,7 @@ Ready to align option
 
    * ECuADOR execution using the second parameters category (ready to align option). It is ideally designed to work with only fasta chloroplast sequences either from genbank or draft sequences which one will identify, extract and reorient the whole analyzed sequences in the widely used LSC, IRA, SSC, IRB chloroplast order. It will facilitate the rapid post-editing steps such as the creation of genome alignments, detection of variable regions, SNP detection, and phylogenomic analyses. 
    
-     * perl ECuADOR.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE
+     * perl ECuADOR.pl -i 5cpDNAtest -w 1000 -f fasta -out test --ext gff3 --save_regions ALL --orient TRUE --noIRs 2
      
      
    This second parameter category may take time according to the number of evaluated chloroplasts.
