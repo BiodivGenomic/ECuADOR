@@ -5,16 +5,18 @@ Copyright (C) 2018-2019 (paper)
 Contact: 
 Programmer: 
 
-Source code available at: 
+ECuADOR uses a sliding-window approach to detect long repeated sequences in draft sequences, which then identifies the inverted repeat regions (IRs), even in case of artifactual breaks or sequencing errors, and automates the rearrangement of the sequence to the widely used LSC-Irb-SSC-IRa order. This facilitates rapid post-editing steps such as creation of genome alignments, detection of variable regions, SNP detection and phylogenomic analyses.
 
-# A quick installation guide follows below
+
+
+# Quick installation guide :
 
 * ECuADOR requires:
 
-1. Perl is usually installed on Unix-like systems by default. If not, it can be retrieved from http://www.perl.org/ or
+1. Perl is usually installed by default on Unix-like systems. If not, it can be retrieved from http://www.perl.org/ or
 
 
-    * Manual instalation
+    * Manual installation
 
         * Mac-Linux
 
@@ -41,7 +43,7 @@ Source code available at:
          https://www.activestate.com/products/activeperl/downloads/
          
      
- 2. Bioperl instalation
+ 2. Bioperl installation
          
          * Linux
      
@@ -71,7 +73,7 @@ Source code available at:
 
 3. Perl requires the following modules
 
-   * Manual instalation
+   * Manual installation
    
       * Mac-Linux-Windows
 
