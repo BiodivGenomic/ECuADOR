@@ -8,6 +8,8 @@ Programmer:
 ECuADOR uses a sliding-window approach to detect long repeated sequences in draft sequences, which then identifies the inverted repeat regions (IRs), even in case of artifactual breaks or sequencing errors, and automates the rearrangement of the sequence to the widely used LSC-Irb-SSC-IRa order. This facilitates rapid post-editing steps such as creation of genome alignments, detection of variable regions, SNP detection and phylogenomic analyses.
 
 
+Latest version available at https://github.com/BiodivGenomic/ECuADOR/releases
+
 
 # Quick installation guide :
 
