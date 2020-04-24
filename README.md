@@ -100,7 +100,7 @@ Latest version available at https://github.com/BiodivGenomic/ECuADOR/releases
 # How to run ECuADOR
 
  # IMPORTANT   
-First, check you have the latest version of our script. All used input chloroplast files either in genbank or fasta format must be in separate files within a unique folder without format mixing (see the examples format files above). The script won't read mixed formats or multi chloroplast sequences in one single container file.
+First, check you have the latest version of our script (https://github.com/BiodivGenomic/ECuADOR/releases). All used input chloroplast files either in genbank or fasta format must be in separate files within a unique folder without format mixing (see the examples format files above). The script won't read mixed formats or multi chloroplast sequences in one single container file.
 
 
 * perl ECuADOR.pl -i cp_container_folder -w 1000 -f genbank -out test --ext gff3
