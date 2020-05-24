@@ -1,9 +1,11 @@
 # ECuADOR
 Easy Curation of Angiosperm Duplicated Organellar Regions -- Identifies, extract, and rearranges the main Chloroplast regions (LSC, IRa, SSC, IRb) in plasmid DNA.
 Version: 2.0
-Copyright (C) 2018-2019 (paper)
-Contact: 
-Programmer: 
+Copyright (C) 2018-2019 (https://peerj.com/articles/8699/) 
+Programmer: Angelo D. Armijos C; Damien Daniel Hinsinger
+
+Citation: Armijos Carrion AD, Hinsinger DD, Strijk JS. 2020. ECuADOR—Easy Curation of Angiosperm Duplicated Organellar Regions, a tool for cleaning and curating plastomes assembled from next generation sequencing pipelines. PeerJ 8:e8699 https://doi.org/10.7717/peerj.8699
+
 
 ECuADOR uses a sliding-window approach to detect long repeated sequences in draft sequences, which then identifies the inverted repeat regions (IRs), even in case of artifactual breaks or sequencing errors, and automates the rearrangement of the sequence to the widely used LSC-Irb-SSC-IRa order. This facilitates rapid post-editing steps such as creation of genome alignments, detection of variable regions, SNP detection and phylogenomic analyses.
 
